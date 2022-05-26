@@ -1,0 +1,14 @@
+preset	3	4	5	6
+ctu	32	64	64	64
+b-adapt	0	0	2	2
+rc-lookahead	15	15	20  25
+lookahead-slices	8	8	8	4
+ref	2	3	3	4
+me	hex	hex	hex	star
+subme	2	2	2	3
+max-merge	2	2	2	3
+rdoq-level	0	0	0	2
+rect	0	0	0	1
+limit-modes	0	0	0	1
+early-skip	1	0	1	0
+fast-intra	1	1	0	0

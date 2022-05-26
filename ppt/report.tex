@@ -1,0 +1,197 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    			% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows}
+
+\title{Optimal Hyper-parameterization for HEVC}
+\subtitle{State Bank of India}
+\author{Shubh Kumar}
+\institute{IIT Bombay}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \frametitle{Optimal Hyper-parametrization for efficient Video Compression}
+    \begin{center}
+        \includegraphics[scale=0.02]{im.png}\\
+        \textbf{Video Compression Hackathon - SBI} \\
+
+        Powered by Microsoft Corporation Pvt. Ltd.
+    \end{center}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Problem}
+    \begin{itemize}
+        \item With the advent of Video based Customer Identification, multiple use-cases have emerged for customer onboarding in a secure, paperless, cost-effective and friendly manner.% \item With the advent of Video Based Customer Identification Process (V-CIP), multiple use cases have emerged for customer onboarding & servicing requests of customers in a secure, paperless, cost-effective and friendly manner.
+        \item Storage and retrieval of these video files is a challenge especially given the expected tsunami of video files that are expected to be generated on extending more use-cases to our client base of over 45 crore customers.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Approach}
+    \begin{itemize}
+        \item Reinforcement Learning Models provide great methods for getting optimal hyperparameters for other methods/models.
+        \item These methods have been used heavily in all domains.
+        \item I made use of the same to learn optimal parameters for a vast array of these.
+    \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{Approach}
+    \begin{itemize}
+        \item These included (among others!) :  Maximum Reference to L0, Early Skipping etc.
+        \item These methods were tabulated into 4 optimal settings in \texttt{vals.txt}
+        \item Then, these were made use of for encoding using \texttt{x265}.
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Approach}
+    \begin{itemize}
+        \item The RL part was done using Feedback Networks' Architecture in TensorFlow.
+        \item The Encryption Algorithm used was AES.
+        \item We also used \texttt{zlib} for further compression.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Video used}
+    \begin{itemize}
+        \item \texttt{phase3.mp4}
+        \item Profile : H.264
+        \item Dimensions : $1920 \times 1080$
+        \item FPS : 30.0
+        \item Bit-Rate : 17036 kbps
+        \item Size : 127.8 MB
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Video used}
+    \begin{itemize}
+        \item \texttt{phase3.mp4}
+        \item Profile : H.264
+        \item Dimensions : $1920 \times 1080$
+        \item FPS : 30.0
+        \item Bit-Rate : 17036 kbps
+        \item Size : 127.8 MB
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Decompressed Video}
+    \begin{itemize}
+        \item \texttt{phase31.mp4}
+        \item Profile (Main) : H.265
+        \item Dimensions : $1920 \times 1080$
+        \item FPS : 30.0 (as expected)
+        \item Bit-Rate : 1381 kbps
+        \item Size (compressed) : 9.5 MB
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Hardware Details}
+    \begin{itemize}
+        \item CPU : Intel(R) Core(TM) i5-1035G1 CPU \@ 1.00GHz
+
+        \item Memory : 8 GB
+        \item Memory Clock : 3200 MHz
+        \item L1 Cache : 128 kB
+        \item L2 Cache : 2 MiB
+        \item L3 Cache : 6 MiB
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Why this model?}
+    \begin{itemize}
+        \item Different Types of applications provide scope for different types of compression shorthands.
+        \item Our approach enables us to learn these shorthands
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Functional Requirements}
+    \begin{itemize}
+        \item \texttt{x265}
+        \item \texttt{opencv4}
+        \item Python's \texttt{cryptography}
+        \item Python's \texttt{zlib}
+        \item \texttt{ffmpeg}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Non-functional Requirements}
+
+    \begin{itemize}
+        \item The Video isn't recorded in camcorders which make use of Compressed Sensing.
+        \item The Noise is minimal and patterns in the images remain consistent.
+        \item The Machine on which the Application is used has $\geq$ 8GB RAM.
+        \item This would enable greater compression due to easier Identification of Generic features.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Our Edge}
+    \begin{itemize}
+        \item \texttt{HEVC} is known to better than state-of-the-art Deep Learning Methods (\textit{DeepCoder}) by an additional 50 $\%$.
+        \item Use-case specific optimization in \textit{HEVC} is generically obtained by making use of hyperparameter optimization.
+        \item Feedback functions could also be tinkered to better reflect our Requirements (should they ever change!)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Github Repository}
+
+    My Actual Github ID is \href{https://github.com/thevaliantthird}{thevaliantthird}
+
+    I've kept the Video Hackathon submission Repository via another profile, \href{https://github.com/theintrepidthird/SBI-Video-Hackathon}{SBI-Video-Hackathon}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Video Demonstration}
+
+    I have demonstrated usage of my application \href{https://github.com/theintrepidthird/SBI-Video-Hackathon/demonstration.mp4}{here}.
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        Thank You! \\~\\
+        Name : Shubh Kumar  \\
+        Email : shubh5796@gmail.com \\
+        Phone Number : 9470434205 \\
+        Github ID (original) : \href{https://github.com/thevaliantthird}{thevaliantthird}
+        
+    \end{center}
+
+\end{frame}
+
+\end{document}
