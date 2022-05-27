@@ -1,9 +1,8 @@
 .. image:: https://freepikpsd.com/file/2019/10/State-Bank-of-India-Logo-PNG-Images-Free.png
     :target: https://www.techgig.com/hackathon/video-compression
 
-:raw-html:`<br />`
     
-.. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
+| .. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
     :target: https://opencv.org/opencv-4-0/
     
 .. image:: https://img.shields.io/badge/dependency-zlib-brightgreen
