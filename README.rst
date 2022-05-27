@@ -4,24 +4,29 @@ Using techniques from Reinforcement Learning for Optimally Hyperparametering Vid
 ***********************************************************************************************
 .. image:: SBI-logo.svg
     :width: 200px
-    :align: middle
+    :align: right
     :height: 200px
     :alt: SBI Logo
 
 .. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
+    :align: right
     :target: https://opencv.org/opencv-4-0/
     
 .. image:: https://img.shields.io/badge/dependency-zlib-brightgreen
+    :align: left
     :target: https://docs.python.org/3/library/zlib.html
 
 .. image:: https://img.shields.io/badge/dependency-cryptography-brightgreen
+    :align: left
     :target: https://pypi.org/project/cryptography/
 
 .. image:: https://img.shields.io/badge/dependency-FFMPEG-brightgreen
+    :align: left
     :target: https://ffmpeg.org/
 
 
 .. image:: https://img.shields.io/badge/contains-x265-red
+    :align: left
     :target: https://bitbucket.org/multicoreware/x265_git.git
 
 
