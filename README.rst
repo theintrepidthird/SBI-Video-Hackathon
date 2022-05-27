@@ -4,7 +4,7 @@ Using techniques from Reinforcement Learning for Optimally Hyperparametering Vid
 ***********************************************************************************************
 .. image:: SBI-logo.svg
     :width: 200px
-    :align: right
+    :align: center
     :height: 200px
     :alt: SBI Logo
 
