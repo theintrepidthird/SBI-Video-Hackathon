@@ -1,0 +1,85 @@
+.. image:: https://freepikpsd.com/file/2019/10/State-Bank-of-India-Logo-PNG-Images-Free.png
+    :target: https://www.techgig.com/hackathon/video-compression
+    
+.. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
+    :target: https://opencv.org/opencv-4-0/
+    
+.. image:: https://img.shields.io/badge/dependency-zlib-brightgreen
+    :target: https://docs.python.org/3/library/zlib.html
+
+.. image:: https://img.shields.io/badge/dependency-cryptography-brightgreen
+    :target: https://pypi.org/project/cryptography/
+
+.. image:: https://img.shields.io/badge/dependency-FFMPEG-brightgreen
+    :target: https://ffmpeg.org/
+
+
+.. image:: https://img.shields.io/badge/contains-x265-red
+    :target: https://bitbucket.org/multicoreware/x265_git.git
+
+
+-------------------------------------------------------------------
+
+This Application has been developed by using Target Networks as commonly used in Reinforcement Learning to learn the optimal parameters that should be fed to HEVC for optimal compression in a particular category of videos, provided a particular type of compression.
+
+    High Efficiency Video Coding (HEVC), also known as H.265 and MPEG-H Part 2, is a video compression standard designed as part of the MPEG-H project as a successor to the widely used Advanced Video Coding (AVC, H.264, or MPEG-4 Part 10). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate. It supports resolutions up to 8192×4320, including 8K UHD, and unlike the primarily 8-bit AVC, HEVC's higher fidelity Main 10 profile has been incorporated into nearly all supporting hardware.
+
+After Successful HEVC compression for the Video and AAC Compression for the audio, We zip these using the most-efficient standard library available (```zlib```) and use 256-bit AES encryption to encrypt the file.
+
+
+Installation of Required Libraries
+-----------------------------------
+
+You can use pip to download and install the ```zlib``` and ```cryptography``` ::
+
+    pip3 install pyflac
+    pip3 install cryptography
+
+You may find instructions on installing ```opencv4``` [here](https://opencv.org/opencv-4-0/).
+
+FFMPEG is a pretty standard library which can be easily installed using ::
+
+    sudo apt install ffmpeg
+
+Installation of these libraries may involve installation of certain intermediaries as well.
+
+
+Supported platforms 
+-------------------
+
+For now
+
+- Linux
+
+
+
+Usage
+-----
+
+First, You must compile both ```compress.cpp``` and ```decompress.cpp```. This can be done as ::
+
+    g++ -pthread compress.cpp -o compress `pkg-config --libs --cflags opencv4`
+    g++ -pthread decompress.cpp -o decompress `pkg-config --libs --cflags opencv4`
+
+
+
+For Compression, You need to follow the steps below ::
+
+- Make a list of all files you need to compress in a file (say ```todo.txt```).
+- Then Run ```./compress todo.txt```
+
+Similarly for decompression ::
+
+- Make a list of all the files you need to compress in a file (say ```todo.txt```).
+- Then Run ```./decompress todo.txt```
+
+Results
+--------
+
+The File ```phase3.mp4``` which was used for testing can be found [here](https://drive.google.com/file/d/14fxNcPJBfU-HgPigVKemZpu6zYA3YGQZ/view?usp=sharing).
+Further, the application is known to process files at speed of about 2 MB/s on Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz.
+
+The Application can be toggled between being single-threaded or Multithreaded requires commenting/uncommenting a single line in the main function(s) (line number 173 and 174 in ```compress.cpp``` and line number 72 and 73 in ```decompress.cpp```).
+
+.. note::
+    The Software makes use of ```x265``` and ```ffmpeg``` which are under the GNU GPL License.
