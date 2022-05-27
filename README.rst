@@ -22,7 +22,7 @@
 
 This Application has been developed by using Target Networks as commonly used in Reinforcement Learning to learn the optimal parameters that should be fed to HEVC for optimal compression in a particular category of videos, provided a particular type of compression.
 
-    High Efficiency Video Coding (HEVC) is a video compression standard designed as a successor to the widely used Advanced Video Coding (AVC, H.264, or MPEG-4 Part 10). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate.
+    High Efficiency Video Coding (HEVC) is a video compression standard designed as a successor to the widely used Advanced Video Coding (AVC). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate.
 
 After Successful HEVC compression for the Video and AAC Compression for the audio, We zip these using the most-efficient standard library available (``zlib``) and use 256-bit AES encryption to encrypt the file.
 
@@ -76,7 +76,7 @@ Similarly for decompression ::
 Results
 --------
 
-The File ``phase3.mp4`` which was used for testing can be found `here<https://drive.google.com/file/d/14fxNcPJBfU-HgPigVKemZpu6zYA3YGQZ/view?usp=sharing>`__.
+The File ``phase3.mp4`` which was used for testing can be found `here <https://drive.google.com/file/d/14fxNcPJBfU-HgPigVKemZpu6zYA3YGQZ/view?usp=sharing>`__.
 Further, the application is known to process files at speed of about 2 MB/s on Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz.
 
 The Application can be toggled between being single-threaded or Multithreaded requires commenting/uncommenting a single line in the main function(s) (line number 173 and 174 in ``compress.cpp`` and line number 72 and 73 in ``decompress.cpp``).
