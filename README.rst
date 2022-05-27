@@ -1,7 +1,9 @@
 .. image:: https://freepikpsd.com/file/2019/10/State-Bank-of-India-Logo-PNG-Images-Free.png
     :target: https://www.techgig.com/hackathon/video-compression
 
-| Using techniques from Reinforcement Learning for Optimally Hyperparametering Video Compression
+***********************************************************************************************
+Using techniques from Reinforcement Learning for Optimally Hyperparametering Video Compression
+***********************************************************************************************
 
  .. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
     :target: https://opencv.org/opencv-4-0/
