@@ -35,7 +35,7 @@ You can use pip to download and install the ``zlib`` and ``cryptography`` ::
     pip3 install pyflac
     pip3 install cryptography
 
-You may find instructions on installing ``opencv4`` `here<https://opencv.org/opencv-4-0/>`__.
+You may find instructions on installing ``opencv4`` `here <https://opencv.org/opencv-4-0/>`__.
 
 FFMPEG is a pretty standard library which can be easily installed using ::
 
