@@ -2,6 +2,11 @@
 ***********************************************************************************************
 Using techniques from Reinforcement Learning for Optimally Hyperparametering Video Compression
 ***********************************************************************************************
+.. image:: SBI-logo.svg
+    :width: 200px
+    :align: center
+    :height: 100px
+    :alt: SBI Logo
 
 .. image:: https://img.shields.io/badge/dependency-opencv4-brightgreen
     :target: https://opencv.org/opencv-4-0/
