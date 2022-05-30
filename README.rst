@@ -32,6 +32,8 @@ Using techniques from Reinforcement Learning for Optimally Hyperparametering Vid
 
 -------------------------------------------------------------------
 
+The Presentation can be found in `PPTX <https://github.com/theintrepidthird/SBI-Video-Hackathon/blob/main/report.pptx>`__ and `PDF <https://github.com/theintrepidthird/SBI-Video-Hackathon/blob/main/report.pdf>`__ , as well as in `PDF <https://github.com/theintrepidthird/SBI-Video-Hackathon/blob/main/report(with%20pauses).pdf>`__ with pauses.
+
 This Application has been developed by using Target Networks as commonly used in Reinforcement Learning to learn the optimal parameters that should be fed to HEVC for optimal compression in a particular category of videos, provided a particular type of compression.
 
     High Efficiency Video Coding (HEVC) is a video compression standard designed as a successor to the widely used Advanced Video Coding (AVC). In comparison to AVC, HEVC offers from 25% to 50% better data compression at the same level of video quality, or substantially improved video quality at the same bit rate.
